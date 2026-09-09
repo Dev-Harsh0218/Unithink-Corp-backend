@@ -1,8 +1,8 @@
-# unithink-corp-api
+# studyvize-api
 
-Backend API for the **UniThink** study-abroad consultancy platform. Node.js + Express + MongoDB, with a Nodemailer email pipeline for lead acknowledgements and application status notifications. Deployed on Vercel as serverless functions.
+Backend API for the **StudyVize** study-abroad consultancy platform. Node.js + Express + MongoDB, with a Nodemailer email pipeline for lead acknowledgements and application status notifications. Deployed on Vercel as serverless functions.
 
-Part of the [UniThink platform](https://github.com/Dev-Harsh0218/unithink-platform). Consumed by [`unithink-corp-web`](https://github.com/Dev-Harsh0218/unithink-corp-web) (staff portal) and receives leads from [`unithink-website`](https://github.com/Dev-Harsh0218/unithink-website) (public marketing site).
+Part of the [StudyVize platform](https://github.com/Dev-Harsh0218/studyvize-platform). Consumed by [`studyvize-portal`](https://github.com/Dev-Harsh0218/studyvize-portal) (staff portal) and receives leads from [`studyvize-website`](https://github.com/Dev-Harsh0218/studyvize-website) (public marketing site).
 
 ## Responsibilities
 
@@ -25,7 +25,7 @@ Part of the [UniThink platform](https://github.com/Dev-Harsh0218/unithink-platfo
 ## Layout
 
 ```
-unithink-corp-api/
+studyvize-api/
 ├── app/                     # request handlers grouped by resource
 ├── routes/                  # Express router definitions
 ├── src/                     # models, services, utilities
@@ -51,7 +51,7 @@ Full route surface: see `routes/`.
 npm install
 cp .env.example .env
 # Set:
-#   MONGODB_URI=mongodb://localhost:27017/unithink
+#   MONGODB_URI=mongodb://localhost:27017/studyvize
 #   SMTP_HOST=...
 #   SMTP_USER=...
 #   SMTP_PASS=...
@@ -83,6 +83,6 @@ Set env vars in Vercel dashboard:
 
 ## Related repos
 
-- [`unithink-platform`](https://github.com/Dev-Harsh0218/unithink-platform) — meta-repo (architecture overview)
-- [`unithink-corp-web`](https://github.com/Dev-Harsh0218/unithink-corp-web) — staff portal (main consumer)
-- [`unithink-website`](https://github.com/Dev-Harsh0218/unithink-website) — public marketing site (lead source)
+- [`studyvize-platform`](https://github.com/Dev-Harsh0218/studyvize-platform) — meta-repo (architecture overview)
+- [`studyvize-portal`](https://github.com/Dev-Harsh0218/studyvize-portal) — staff portal (main consumer)
+- [`studyvize-website`](https://github.com/Dev-Harsh0218/studyvize-website) — public marketing site (lead source)
